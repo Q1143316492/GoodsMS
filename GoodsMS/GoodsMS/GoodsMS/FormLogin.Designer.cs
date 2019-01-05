@@ -57,7 +57,7 @@
             this.txt_name.Location = new System.Drawing.Point(174, 156);
             this.txt_name.MaxLength = 10;
             this.txt_name.Name = "txt_name";
-            this.txt_name.Size = new System.Drawing.Size(338, 27);
+            this.txt_name.Size = new System.Drawing.Size(348, 27);
             this.txt_name.TabIndex = 1;
             // 
             // txt_pswd
@@ -67,7 +67,7 @@
             this.txt_pswd.MaxLength = 10;
             this.txt_pswd.Name = "txt_pswd";
             this.txt_pswd.PasswordChar = '*';
-            this.txt_pswd.Size = new System.Drawing.Size(338, 27);
+            this.txt_pswd.Size = new System.Drawing.Size(348, 27);
             this.txt_pswd.TabIndex = 3;
             // 
             // lab_uspswd
@@ -101,15 +101,15 @@
             "3. 权限控制管理"});
             this.cbox_type.Location = new System.Drawing.Point(174, 258);
             this.cbox_type.Name = "cbox_type";
-            this.cbox_type.Size = new System.Drawing.Size(338, 25);
+            this.cbox_type.Size = new System.Drawing.Size(348, 25);
             this.cbox_type.TabIndex = 5;
             // 
             // btn_login
             // 
             this.btn_login.Font = new System.Drawing.Font("宋体", 13F);
-            this.btn_login.Location = new System.Drawing.Point(144, 310);
+            this.btn_login.Location = new System.Drawing.Point(118, 310);
             this.btn_login.Name = "btn_login";
-            this.btn_login.Size = new System.Drawing.Size(92, 29);
+            this.btn_login.Size = new System.Drawing.Size(132, 29);
             this.btn_login.TabIndex = 6;
             this.btn_login.Text = "登入";
             this.btn_login.UseVisualStyleBackColor = true;
@@ -118,9 +118,9 @@
             // btn_register
             // 
             this.btn_register.Font = new System.Drawing.Font("宋体", 13F);
-            this.btn_register.Location = new System.Drawing.Point(339, 310);
+            this.btn_register.Location = new System.Drawing.Point(323, 310);
             this.btn_register.Name = "btn_register";
-            this.btn_register.Size = new System.Drawing.Size(92, 29);
+            this.btn_register.Size = new System.Drawing.Size(132, 29);
             this.btn_register.TabIndex = 7;
             this.btn_register.Text = "注册";
             this.btn_register.UseVisualStyleBackColor = true;

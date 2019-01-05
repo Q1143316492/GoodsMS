@@ -18,3 +18,8 @@ C:\Users\cwl\Desktop\GoodsMS5\GoodsMS\GoodsMS\GoodsMS.DAL\bin\Debug\GoodsMS.DAL.
 C:\Users\cwl\Desktop\GoodsMS5\GoodsMS\GoodsMS\GoodsMS.DAL\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\cwl\Desktop\GoodsMS5\GoodsMS\GoodsMS\GoodsMS.DAL\obj\Debug\GoodsMS.DAL.dll
 C:\Users\cwl\Desktop\GoodsMS5\GoodsMS\GoodsMS\GoodsMS.DAL\obj\Debug\GoodsMS.DAL.pdb
+C:\Users\cwl\Desktop\MyGoodsMS\GoodsMS\GoodsMS\GoodsMS\GoodsMS.DAL\bin\Debug\GoodsMS.DAL.dll
+C:\Users\cwl\Desktop\MyGoodsMS\GoodsMS\GoodsMS\GoodsMS\GoodsMS.DAL\bin\Debug\GoodsMS.DAL.pdb
+C:\Users\cwl\Desktop\MyGoodsMS\GoodsMS\GoodsMS\GoodsMS\GoodsMS.DAL\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\cwl\Desktop\MyGoodsMS\GoodsMS\GoodsMS\GoodsMS\GoodsMS.DAL\obj\Debug\GoodsMS.DAL.dll
+C:\Users\cwl\Desktop\MyGoodsMS\GoodsMS\GoodsMS\GoodsMS\GoodsMS.DAL\obj\Debug\GoodsMS.DAL.pdb

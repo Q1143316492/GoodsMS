@@ -107,12 +107,12 @@ namespace GoodsMS.BAL
             if (type == 0)
             {
                 return String.Format("update goods set goods_num = goods_num + {0} where goods_id = '{1}' "
-                            , number, goods.Goods_id);
+                        , number, goods.Goods_id);
             }
             else
             {
                 return String.Format("update goods set goods_num = goods_num - {0} where goods_id = '{1}' "
-                            , number, goods.Goods_id);
+                        , number, goods.Goods_id);
             }
         }
 

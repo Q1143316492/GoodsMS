@@ -52,3 +52,12 @@ C:\Users\cwl\Desktop\GoodsMS5\GoodsMS\GoodsMS\GoodsMS.BAL\bin\Debug\GoodsMS.DAL.
 C:\Users\cwl\Desktop\GoodsMS5\GoodsMS\GoodsMS\GoodsMS.BAL\bin\Debug\GoodsMS.modle.dll
 C:\Users\cwl\Desktop\GoodsMS5\GoodsMS\GoodsMS\GoodsMS.BAL\bin\Debug\GoodsMS.DAL.pdb
 C:\Users\cwl\Desktop\GoodsMS5\GoodsMS\GoodsMS\GoodsMS.BAL\bin\Debug\GoodsMS.modle.pdb
+C:\Users\cwl\Desktop\MyGoodsMS\GoodsMS\GoodsMS\GoodsMS\GoodsMS.BAL\bin\Debug\GoodsMS.BAL.dll
+C:\Users\cwl\Desktop\MyGoodsMS\GoodsMS\GoodsMS\GoodsMS\GoodsMS.BAL\bin\Debug\GoodsMS.BAL.pdb
+C:\Users\cwl\Desktop\MyGoodsMS\GoodsMS\GoodsMS\GoodsMS\GoodsMS.BAL\bin\Debug\GoodsMS.DAL.dll
+C:\Users\cwl\Desktop\MyGoodsMS\GoodsMS\GoodsMS\GoodsMS\GoodsMS.BAL\bin\Debug\GoodsMS.modle.dll
+C:\Users\cwl\Desktop\MyGoodsMS\GoodsMS\GoodsMS\GoodsMS\GoodsMS.BAL\bin\Debug\GoodsMS.DAL.pdb
+C:\Users\cwl\Desktop\MyGoodsMS\GoodsMS\GoodsMS\GoodsMS\GoodsMS.BAL\bin\Debug\GoodsMS.modle.pdb
+C:\Users\cwl\Desktop\MyGoodsMS\GoodsMS\GoodsMS\GoodsMS\GoodsMS.BAL\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\cwl\Desktop\MyGoodsMS\GoodsMS\GoodsMS\GoodsMS\GoodsMS.BAL\obj\Debug\GoodsMS.BAL.dll
+C:\Users\cwl\Desktop\MyGoodsMS\GoodsMS\GoodsMS\GoodsMS\GoodsMS.BAL\obj\Debug\GoodsMS.BAL.pdb

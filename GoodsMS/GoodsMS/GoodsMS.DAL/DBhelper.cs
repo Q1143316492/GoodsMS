@@ -69,17 +69,25 @@ namespace GoodsMS
 
         public DataTable SqlSelect(string sqlcmd, string tableName)
         {
-            SqlConnection con = new SqlConnection(defaultConStr);
-            SqlCommand cmd = new SqlCommand(sqlcmd, con);
-            con.Open();
-            da = new SqlDataAdapter(cmd);
-            ds = new DataSet(tableName);
-            dt = new DataTable();
-            
-            da.Fill(ds, tableName);
-            dt = ds.Tables[tableName];
-            con.Close();
-            return dt;
+            try
+            {
+                SqlConnection con = new SqlConnection(defaultConStr);
+                SqlCommand cmd = new SqlCommand(sqlcmd, con);
+                con.Open();
+                da = new SqlDataAdapter(cmd);
+                ds = new DataSet(tableName);
+                dt = new DataTable();
+
+                da.Fill(ds, tableName);
+                dt = ds.Tables[tableName];
+                con.Close();
+                return dt;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+                return null;
+            }
         }
 
         public int updateDate(string sqlStr)

@@ -45,6 +45,12 @@ namespace GoodsMS.UI
                 MessageBox.Show("两次输入密码不一致");
                 return;
             }
+
+            if (!Checker.Check_Password(txt_pswd2.Text.Trim()))
+            {
+                MessageBox.Show("密码强度过低");
+                return;
+            }
             User user = new User();
             user.Username = txt_name.Text.Trim();
             user.Password = txt_pswd1.Text.Trim();

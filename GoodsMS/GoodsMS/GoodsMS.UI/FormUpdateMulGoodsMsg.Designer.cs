@@ -50,6 +50,7 @@
             this.btn_clear_list = new System.Windows.Forms.Button();
             this.btn_post = new System.Windows.Forms.Button();
             this.btn_fresh = new System.Windows.Forms.Button();
+            this.btn_delline = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_peo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -121,6 +122,7 @@
             this.lis_menu.Name = "lis_menu";
             this.lis_menu.Size = new System.Drawing.Size(1280, 157);
             this.lis_menu.TabIndex = 20;
+            this.lis_menu.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lis_menu_MouseDoubleClick);
             // 
             // label1
             // 
@@ -259,17 +261,28 @@
             // 
             this.btn_fresh.Location = new System.Drawing.Point(482, 483);
             this.btn_fresh.Name = "btn_fresh";
-            this.btn_fresh.Size = new System.Drawing.Size(75, 27);
+            this.btn_fresh.Size = new System.Drawing.Size(101, 27);
             this.btn_fresh.TabIndex = 36;
-            this.btn_fresh.Text = "刷新";
+            this.btn_fresh.Text = "刷新单号";
             this.btn_fresh.UseVisualStyleBackColor = true;
             this.btn_fresh.Click += new System.EventHandler(this.btn_fresh_Click);
+            // 
+            // btn_delline
+            // 
+            this.btn_delline.Location = new System.Drawing.Point(605, 483);
+            this.btn_delline.Name = "btn_delline";
+            this.btn_delline.Size = new System.Drawing.Size(152, 27);
+            this.btn_delline.TabIndex = 37;
+            this.btn_delline.Text = "删除选择行";
+            this.btn_delline.UseVisualStyleBackColor = true;
+            this.btn_delline.Click += new System.EventHandler(this.btn_delline_Click);
             // 
             // FormUpdateMulGoodsMsg
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1320, 722);
+            this.Controls.Add(this.btn_delline);
             this.Controls.Add(this.btn_fresh);
             this.Controls.Add(this.btn_post);
             this.Controls.Add(this.btn_clear_list);
@@ -328,5 +341,6 @@
         private System.Windows.Forms.Button btn_clear_list;
         private System.Windows.Forms.Button btn_post;
         private System.Windows.Forms.Button btn_fresh;
+        private System.Windows.Forms.Button btn_delline;
     }
 }

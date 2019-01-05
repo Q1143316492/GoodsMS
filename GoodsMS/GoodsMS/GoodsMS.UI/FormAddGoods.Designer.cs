@@ -59,6 +59,7 @@
             // 
             this.txt_goodsname.Font = new System.Drawing.Font("宋体", 13F);
             this.txt_goodsname.Location = new System.Drawing.Point(411, 72);
+            this.txt_goodsname.MaxLength = 40;
             this.txt_goodsname.Name = "txt_goodsname";
             this.txt_goodsname.Size = new System.Drawing.Size(167, 27);
             this.txt_goodsname.TabIndex = 24;
@@ -77,6 +78,7 @@
             // 
             this.txt_goodsid.Font = new System.Drawing.Font("宋体", 13F);
             this.txt_goodsid.Location = new System.Drawing.Point(130, 72);
+            this.txt_goodsid.MaxLength = 40;
             this.txt_goodsid.Name = "txt_goodsid";
             this.txt_goodsid.Size = new System.Drawing.Size(167, 27);
             this.txt_goodsid.TabIndex = 22;
@@ -95,6 +97,7 @@
             // 
             this.txt_goodsSize.Font = new System.Drawing.Font("宋体", 13F);
             this.txt_goodsSize.Location = new System.Drawing.Point(130, 134);
+            this.txt_goodsSize.MaxLength = 40;
             this.txt_goodsSize.Name = "txt_goodsSize";
             this.txt_goodsSize.Size = new System.Drawing.Size(167, 27);
             this.txt_goodsSize.TabIndex = 26;
@@ -113,6 +116,7 @@
             // 
             this.txt_GoodsUnit.Font = new System.Drawing.Font("宋体", 13F);
             this.txt_GoodsUnit.Location = new System.Drawing.Point(411, 137);
+            this.txt_GoodsUnit.MaxLength = 40;
             this.txt_GoodsUnit.Name = "txt_GoodsUnit";
             this.txt_GoodsUnit.Size = new System.Drawing.Size(167, 27);
             this.txt_GoodsUnit.TabIndex = 28;
@@ -141,6 +145,7 @@
             // 
             this.txt_GoodsNum.Font = new System.Drawing.Font("宋体", 13F);
             this.txt_GoodsNum.Location = new System.Drawing.Point(130, 198);
+            this.txt_GoodsNum.MaxLength = 40;
             this.txt_GoodsNum.Name = "txt_GoodsNum";
             this.txt_GoodsNum.Size = new System.Drawing.Size(167, 27);
             this.txt_GoodsNum.TabIndex = 30;
@@ -171,6 +176,7 @@
             // 
             this.txt_other.Font = new System.Drawing.Font("宋体", 13F);
             this.txt_other.Location = new System.Drawing.Point(128, 254);
+            this.txt_other.MaxLength = 40;
             this.txt_other.Multiline = true;
             this.txt_other.Name = "txt_other";
             this.txt_other.Size = new System.Drawing.Size(450, 68);

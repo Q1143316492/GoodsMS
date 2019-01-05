@@ -22,6 +22,7 @@ namespace GoodsMS.UI
         List<KeyValuePair<GoodsMenu, int> > list = new List<KeyValuePair<GoodsMenu, int> >();
 
         public User user = null;
+        int menu_list_count = 0;
 
         private void btn_go_Click(object sender, EventArgs e)
         {
@@ -57,14 +58,19 @@ namespace GoodsMS.UI
 
         private void btn_add_Click(object sender, EventArgs e)
         {
-            if (!Checker.Check_Number(txt_optnum.Text.Trim()))
+            if (!Checker.Check_Number(txt_optnum.Text.Trim(), false))
             {
                 MessageBox.Show("数量输入不正确");
                 return;
             }
+            if (cbx_tp.SelectedIndex == -1)
+            {
+                MessageBox.Show("未选择操作类型");
+                return;
+            }
             GoodsMenu menu = new GoodsMenu();
 
-            txt_menuid.Text = UpdateMulGoodsHelper.get_menu_id(user, dt_opttime.Value, lis_menu.Items.Count + 1);
+            txt_menuid.Text = UpdateMulGoodsHelper.get_menu_id(user, dt_opttime.Value, ++menu_list_count);
             menu.MenuId = txt_menuid.Text.Trim();
             menu.Date = dt_opttime.Value;
             menu.OptPeopleId = user.Userid;
@@ -93,7 +99,7 @@ namespace GoodsMS.UI
         private void btn_fresh_Click(object sender, EventArgs e)
         {
             dt_opttime.Value = DateTime.Now;
-            txt_menuid.Text = UpdateMulGoodsHelper.get_menu_id(user, dt_opttime.Value, lis_menu.Items.Count + 1);
+            txt_menuid.Text = UpdateMulGoodsHelper.get_menu_id(user, dt_opttime.Value, ++menu_list_count);
         }
 
         private void btn_post_Click(object sender, EventArgs e)
@@ -113,13 +119,18 @@ namespace GoodsMS.UI
                     cmd1 = GoodsMSHelper.entry_goods(menu);
                     cmd2 = GoodsMSHelper.Update_goods_number(menu.Goods, menu.Number, 0);
                 }
-                else // out
+                else if(type == 1) // out
                 {
                     cmd1 = GoodsMSHelper.come_goods(menu);
                     cmd2 = GoodsMSHelper.Update_goods_number(menu.Goods, menu.Number, 1);
                 }
                 arr.Add(cmd1);
                 arr.Add(cmd2);
+            }
+            if (arr.Count == 0)
+            {
+                MessageBox.Show("订单为空");
+                return;
             }
             if (GoodsMSHelper.multy_post_menu(arr))
             {
@@ -143,6 +154,49 @@ namespace GoodsMS.UI
                 goods_id = dgv_peo.Rows[row_id].Cells[0].Value.ToString();
             }
             txt_goodsid.Text = goods_id;
+        }
+
+        ///delete one line from the menu
+        private void lis_menu_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            fresh_menu_by_del_line();
+        }
+
+        private void btn_delline_Click(object sender, EventArgs e)
+        {
+            fresh_menu_by_del_line();
+        }
+
+        private void fresh_menu_by_del_line()
+        {
+            if (lis_menu.SelectedItem == null)
+            {
+                return;
+            }
+            if (MessageBox.Show("确认删除这一项?", "确认删除这一项?", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.No)
+            {
+                return;
+            }
+            var arr = lis_menu.SelectedItem.ToString().Split(' ');
+            string good_id = arr[0];
+            string good_num = arr[3];
+            if (!Checker.Check_Number(good_num))
+            {
+                MessageBox.Show("库存修改数值错误");
+                return;
+            }
+                
+            foreach (var x in list)
+            {
+                if (x.Key.Goods.Goods_id.Equals(good_id) && x.Key.Number.Equals(good_num))
+                {
+                    list.Remove(x);
+
+                    string tmp = UpdateMulGoodsHelper.add_list_message(x.Key, x.Value);
+                    lis_menu.Items.Remove(UpdateMulGoodsHelper.add_list_message(x.Key, x.Value));
+                    break;
+                }
+            }
         }
 
     }

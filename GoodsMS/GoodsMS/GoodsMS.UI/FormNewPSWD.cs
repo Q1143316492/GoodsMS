@@ -45,6 +45,11 @@ namespace GoodsMS.UI
                 MessageBox.Show("两次新密码不正确");
                 return;
             }
+            if (!Checker.Check_Password(pswd1))
+            {
+                MessageBox.Show("密码强度过低");
+                return;
+            }
             user.Password = pswd1;
             if (PeopleMSHelper.Update_User_msg(user))
             {

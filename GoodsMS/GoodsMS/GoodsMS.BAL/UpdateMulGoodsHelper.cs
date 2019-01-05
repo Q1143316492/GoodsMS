@@ -19,6 +19,7 @@ namespace GoodsMS.BAL
             String msg = menu.Goods.Goods_id + " "+ menu.Goods.Goods_name + " ";
             msg += type == 0 ? "[入库] " : "[出库] ";
             msg += menu.Number;
+            msg += " ";
             msg += menu.Goods.Goods_unit;
             return msg;
         }
