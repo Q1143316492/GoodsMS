@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
+  <asmv1:assemblyIdentity name="GoodsMS.exe" version="1.0.0.0" publicKeyToken="02a578d9bbcccc79" language="neutral" processorArchitecture="x86" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="GoodsMS" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="GoodsMS.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC 清单选项
+          如果要更改 Windows 用户帐户控制级别，请用以下节点之一替换
+          requestedExecutionLevel 节点。
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+          如果要利用文件和注册表虚拟化提供
+          向后兼容性，请删除 requestedExecutionLevel 节点。
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.ReportViewer.Common" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.ReportViewer.DataVisualization" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.ReportViewer.ProcessingObjectModel" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.ReportViewer.WinForms" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GoodsMS.exe" size="160256">
+      <assemblyIdentity name="GoodsMS" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>oNr3j9fHkAhzrqwkJVcwYCTOMQM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GoodsMS.BAL.dll" size="18432">
+      <assemblyIdentity name="GoodsMS.BAL" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>h1f+Eh67M2cuZrxveHsd1vYMvO8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GoodsMS.DAL.dll" size="7680">
+      <assemblyIdentity name="GoodsMS.DAL" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>PSZX6i7MGIsWlHFz3fOAqNlFVCE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GoodsMS.modle.dll" size="8192">
+      <assemblyIdentity name="GoodsMS.modle" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>O4oDk8H+fP4EImX0tcT+2j2bvUU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GoodsMS.UI.dll" size="1766912">
+      <assemblyIdentity name="GoodsMS.UI" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>f+chQj/GIc+MVwVhfsavODsVVhU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GoodsW.exe" size="22528">
+      <assemblyIdentity name="GoodsW" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>3SoxcMymaKq+uoduYdfaNWKpOd4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+<publisherIdentity name="CN=cwl-PC\cwl" issuerKeyHash="d88f0e5c4019c90371c4e9c81919dd646da8d9e7" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>ZFfrGRh/JCtc7aUemj6hrPLtHyM=</DigestValue></Reference></SignedInfo><SignatureValue>RsqdGQjwdssN4IZ/h2EhRiV3IGTZfmMY95cd84vNOEmjcLUQ0q2/vaeT6wHmBrt3VGko7nJDvnD/QturTV4TRBoaBDJcm/l/0Zvf30bm//Nh++YJWdrtrAlZsmqw4KPIXtttZyFq6jspvSDqNGAZMCX30IXSV7STkl1Aj36iC2A=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>swlN4Whxwm4jVtaLp/3SDTnrvnf0m4NE5O9gEzyuUau4O7hMQlaSN3NmzqQQpOio88WdYl6VN0CW2xU28dZdiGeXrORMIo4FRqKlDhZKXITItRgzxaoFeG5VX6EJJ0qK+Q19UYL770T0LRBRamh1EyCbOhYn35JDWluhJ5k/diU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="231fedf2aca13e9a1ea5ed5c2b247f1819eb5764" Description="" Url=""><as:assemblyIdentity name="GoodsMS.exe" version="1.0.0.0" publicKeyToken="02a578d9bbcccc79" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=cwl-PC\cwl</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>+bRAY60VuAGWYJG+DYZcWZbr32g=</DigestValue></Reference></SignedInfo><SignatureValue>b70NH6zAmRYLBW+Rz63A38sNZebcizYDpwCmoS13kC8W0RR+2yz71tf7+Mm7GHzz0Sj0WVSMOdhJlbP3IDfaVxhtAmo5lsKWf9/5qTbGCPkfem8ZcL8Br4iwojhSiwd+YrVQiM9CzpXk1FmKSoJnkEws5iF8+x2c1eVdBc4asaE=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>swlN4Whxwm4jVtaLp/3SDTnrvnf0m4NE5O9gEzyuUau4O7hMQlaSN3NmzqQQpOio88WdYl6VN0CW2xU28dZdiGeXrORMIo4FRqKlDhZKXITItRgzxaoFeG5VX6EJJ0qK+Q19UYL770T0LRBRamh1EyCbOhYn35JDWluhJ5k/diU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBwTCCASqgAwIBAgIQVPW7Kb5Gb5BFDGUryLA4MDANBgkqhkiG9w0BAQUFADAfMR0wGwYDVQQDHhQAYwB3AGwALQBQAEMAXABjAHcAbDAeFw0xOTAxMDUxMjMxMjFaFw0yMDAxMDUxODMxMjFaMB8xHTAbBgNVBAMeFABjAHcAbAAtAFAAQwBcAGMAdwBsMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCzCU3haHHCbiNW1oun/dINOeu+d/Sbg0Tk72ATPK5Rq7g7uExCVpI3c2bOpBCk6KjzxZ1iXpU3QJbbFTbx1l2IZ5es5EwijgVGoqUOFkpchMi1GDPFqgV4blVfoQknSor5DX1RgvvvRPQtEFFqaHUTIJs6FiffkkNaW6EnmT92JQIDAQABMA0GCSqGSIb3DQEBBQUAA4GBAB7xozG2oijisocIApWJ2/Hpo61vaMKm/wdvU8WEwKkG3TKwAukMTf9SpbIjPgkxm4EKu+QS4agrb6F5fY83tEclOU4QUzdw7XHYq19znBPtMS+A6G69EBXV9xI2zd7PhhFPW2ghm0qXGJgv8OvFvLtZRhAWubpNoHwDyfGTC74I</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
