@@ -45,7 +45,8 @@ create table people
 );
 
 select userid '人员代码', username '姓名', sex '性别', birithday '出生日期', idnumber '身份证号', loc_city '籍贯', home_address '家庭住址', phone '联系电话', others '其他情况'  from people;
-
+delete from people;
+insert into people values ('user001', '你好', '男', '1997-10-13', '350123199710134195', 'fj', 'fj', '110', 'null');
 
 --物料代码、物料名称、规格型号、计量单位、库存数量、备注等字段
 create table goods
@@ -59,7 +60,8 @@ create table goods
 );
 
 select goods_id, goods_name, goods_size, goods_unit, goods_num, note from goods;
-
+delete from goods;
+insert into goods values('name', 'id', 'fx' ,'台', 0, 'null');
 
 create table entry  ---进仓表
 (
@@ -91,11 +93,12 @@ create table report
   comenumber  int,  ---出仓数量
 )
 
+select * from entry;
 select * from come;
 delete from entry;
+delete from come;
 
 select * from entry;
-
 select * from report;
 
 insert into report (comeid, cometime, peopleid, text2, goodsid, comenumber) values
