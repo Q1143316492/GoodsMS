@@ -30,6 +30,10 @@ namespace GoodsMS.UI
         {
             DateTime dt_begin = dtp_begin.Value.ToLocalTime();
             DateTime dt_end = dtp_end.Value.ToLocalTime();
+            if (cbx_type.SelectedIndex == -1)
+            {
+                return;
+            }
             if (cbx_type.SelectedIndex == 0)
             {
                 ReportManager.init_entry_report(dt_begin, dt_end);

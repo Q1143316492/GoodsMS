@@ -26,7 +26,7 @@ namespace GoodsW
         {
             string name = textBox1.Text.Trim();
             string tablename = "goods";
-            string cmd = string.Format("select * from {0} where goodsid like '%{1}%'",tablename,name);
+            string cmd = string.Format("select * from {0} where goods_id like '%{1}%'",tablename,name);
             DataTable dt = SystemDBhelper.getTableBySql(cmd, tablename);
             dataGridView1.DataSource = dt;
             if (dt.Rows.Count == 0)
