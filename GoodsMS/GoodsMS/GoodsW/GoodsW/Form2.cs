@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using GoodsMS.BAL;
 
 namespace GoodsW
 {
@@ -28,6 +29,11 @@ namespace GoodsW
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (Checker.Check_Number(entrynumber.Text.Trim()))
+            {
+                MessageBox.Show("数量格式不正确");
+                return;
+            }
             entry enn = new entry();
             enn.Entryid = entryid.Text.Trim();
             enn.Peopleid = peopleid.Text.Trim();
@@ -48,6 +54,11 @@ namespace GoodsW
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void entrynumber_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

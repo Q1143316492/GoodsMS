@@ -38,7 +38,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(118, 62);
+            this.textBox1.Location = new System.Drawing.Point(103, 62);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(173, 21);
             this.textBox1.TabIndex = 0;
@@ -78,7 +78,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(12, 89);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(438, 177);
+            this.dataGridView1.Size = new System.Drawing.Size(459, 182);
             this.dataGridView1.TabIndex = 4;
             // 
             // Form4

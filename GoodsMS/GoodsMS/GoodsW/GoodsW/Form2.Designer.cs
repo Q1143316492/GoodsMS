@@ -169,6 +169,7 @@
             this.entrynumber.Name = "entrynumber";
             this.entrynumber.Size = new System.Drawing.Size(167, 27);
             this.entrynumber.TabIndex = 32;
+            this.entrynumber.TextChanged += new System.EventHandler(this.entrynumber_TextChanged);
             // 
             // text1
             // 
