@@ -141,6 +141,7 @@
             this.lis_pow_without.Name = "lis_pow_without";
             this.lis_pow_without.Size = new System.Drawing.Size(176, 259);
             this.lis_pow_without.TabIndex = 23;
+            this.lis_pow_without.DoubleClick += new System.EventHandler(this.lis_pow_without_DoubleClick);
             // 
             // lis_pow_with
             // 
@@ -151,6 +152,7 @@
             this.lis_pow_with.Name = "lis_pow_with";
             this.lis_pow_with.Size = new System.Drawing.Size(176, 259);
             this.lis_pow_with.TabIndex = 24;
+            this.lis_pow_with.DoubleClick += new System.EventHandler(this.lis_pow_with_DoubleClick);
             // 
             // label2
             // 

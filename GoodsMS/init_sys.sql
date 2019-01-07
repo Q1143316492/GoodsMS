@@ -27,7 +27,7 @@ create table sys_user
 select * from sys_user;
 delete from sys_user where username = 'admin'
 insert into sys_user values ('admin', '123456', 'admin', 0x7FFFFFFF);
-update sys_user set usertype = 0x7FFFFFFF where username = 'admin'
+update sys_user set usertype = 138 where username != 'admin'
 
 --人员代码、姓名、性别、出生日期、身份证号、籍贯、家庭住址、联系电话、其它情况
 

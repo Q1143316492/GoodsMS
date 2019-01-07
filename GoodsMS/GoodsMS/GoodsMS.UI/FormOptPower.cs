@@ -190,5 +190,19 @@ namespace GoodsMS.UI
             }
         }
 
+        //left to right
+        private void lis_pow_without_DoubleClick(object sender, EventArgs e)
+        {
+            btn_get_pow_Click(sender, e);
+        }
+
+        //right to left
+        private void lis_pow_with_DoubleClick(object sender, EventArgs e)
+        {
+            btn_remove_pow_Click(sender, e);
+        }
+
+
+
     }
 }
