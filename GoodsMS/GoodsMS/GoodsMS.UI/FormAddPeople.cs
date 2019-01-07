@@ -53,7 +53,7 @@ namespace GoodsMS.UI
 
             User user = new User();
             user.Userid = people.Userid;
-            user.Username = people.Name;
+            user.Username = people.Userid;
             user.Password = "123456";
             user.Type = PowerManager.DEFAULT_POWER.ToString();
 

@@ -14,7 +14,7 @@ namespace GoodsMS.BAL
 
         ///1010
 
-        public static int DEFAULT_POWER = 266;
+        public static int DEFAULT_POWER = 138;
         public static int MAX_POWER = 0x7FFFFFFF;
 
         public enum power {
